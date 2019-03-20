@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>feeed</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+    <!-- Firestore -->
+    <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-firestore.js"></script>
+
+</head>
+<header>
+
+
+
+</header>
+
+
+<body>
+    <div class="container-section">
+        <a href="#" class="sidenav-trigger" data-target="menu-side">
+            <i class="material-icons" id="menu-side-nav">menu</i></a>
+        </a>
+        <ul class="sidenav" id="menu-side">
+            <li>
+                <div class="user-view">
+                    <div class="background">
+                        <img src="assets/images/backgroundlu2.png" alt="">
+
+                    </div>
+                    <a href="#">
+                        <img src="assets/images/photo-1496902526517-c0f2cb8fdb6a.jpg" alt="user" class="circle">
+                        <a href="">
+                            <span class="name-with-white-text">usuario apellido</span>
+                        </a>
+                        <a href="">
+                            <span class="email-with-white-text">usuario@correo.com/span>
+                        </a>
+
+                    </a>
+                </div>
+            </li>
+            <li>
+                <a href="">
+                    <i class="material-icons">create</i>
+                    editar perfil
+                </a>
+            </li>
+            <li>
+                <div class="divider"></div>
+                <a href="">
+                    <i class="material-icons">card_membership</i>
+                    lista de eventos
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <i class="material-icons">contact_mail</i>
+                    lista de contactos
+                </a>
+            </li>
+        </ul>
+    </div>
+
+
+
+
+    <section class="container">
+        <h1>Link up!</h1>
+        <!--<input type="text" id="name" placeholder="Nombre" class="form-control my-3">-->
+        <input type="text" id="mssg" placeholder="Mensaje" class="form-control my-3">
+        <button class="btn btn-link" id="button-safe" onclick="safe()">Publicar</button>
+
+    </section>
+
+    <section id="wall">
+        <section id="post"></section>
+        <section id="buttons-wall">
+        </section>
+    </section>
+
+
+</body>
+<script src="main.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+</html>

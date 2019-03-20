@@ -1,0 +1,41 @@
+@media (min-width: 320px) and (max-width: 480px) {
+    body {
+        width: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+         font-family: 'Montserrat', sans-serif;
+
+
+    }
+
+   
+
+    .brand-logo{
+        height: 2px;
+        position: relative;
+        right: 39%;
+        color: rgb(42, 42, 187);
+    }
+
+    #menu-side-nav {
+        position: relative;
+        top: 5%;
+        left: 3%;
+        color: blue;
+    }
+
+    div.card {
+        width: 80%;
+        margin: 8%;
+    }
+
+    #deleting {
+        position: relative;
+        left: 80%;
+    }
+
+    #creating {
+        position: relative;
+        left: 78%
+    }
+}
